@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>ERP simple SME - Tax Invoices</title>
+    <title>ERP simple SME - Purchase Orders</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -223,145 +223,75 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1 class="page-header">Tax Invoices
-                            <button type="button" class="btn btn-info">
-                                <i class="fa fa-plus"></i> Add Sales Receipt
-                            </button>
+                        <h1 class="page-header">Purchase Orders
                         </h1>
                         <!-- Content HERE !!! -->
                             <div class="row">
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="panel panel-success">
+                                        <div class="panel-heading">
+                                            <div class="row">
+                                                <div class="col-xs-3">
+                                                    <i class="fa fa-file-excel-o fa-2x"></i>
+                                                    <div>Jan 16,2016</div>
+                                                </div>
+                                                <div class="col-xs-9 text-right">
+                                                    <div style="font-size:22px">SORD-001</div>
+                                                    <!-- <div>Support Tickets!</div> -->
+                                                    <div><i class="fa fa-building-o fa-1x"></i> Goodwill co.,ltd.</div>
+                                                    <div><i class="fa fa-male fa-1x"></i> Methaphan R.</div>
+                                                </div>
+                                            </div>
+                                            <div style="font-size:22px">THB 34800.00</div>
+                                            <span class="label label-success">Billed</span>
+                                            <span class="label label-success">Received</span>
+                                        </div>
+                                        <a href="pur_vendor.html">
+                                            <div class="panel-footer">
+                                                <span class="pull-left">Email</span>
+                                                <span class="pull-right"><i class="fa fa-envelope"></i></span>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                        </a>
+                                        <a href="pur_vendor.html">
+                                            <div class="panel-footer">
+                                                <span class="pull-left">Print</span>
+                                                <span class="pull-right"><i class="fa fa-print"></i></span>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                        </a>
+                                        <a href="pur_vendor.html" class="text-danger">
+                                            <div class="panel-footer">
+                                                <span class="pull-left">Delete</span>
+                                                <span class="pull-right"><i class="fa fa-close"></i></span>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
                                 <div class="col-lg-3 col-md-6">
                                     <div class="panel panel-danger">
                                         <div class="panel-heading">
                                             <div class="row">
                                                 <div class="col-xs-3">
-                                                    <i class="fa fa-file-text fa-2x"></i>
-                                                    <div>Jan 16,2016</div>
-                                                </div>
-                                                <div class="col-xs-9 text-right">
-                                                    <div style="font-size:22px">CINV-041</div>
-                                                    <!-- <div>Support Tickets!</div> -->
-                                                    <div><i class="fa fa-group fa-1x"></i> Chonlatorn Khunkajornkiat</div>
-                                                    <div><i class="fa fa-male fa-1x"></i> Methaphan R.</div>
-                                                </div>
-                                            </div>
-                                            <div style="font-size:22px">THB 2690.00</div>
-                                            <span class="label label-danger">5 days late</span>
-                                        </div>
-                                        <a href="pur_vendor.html">
-                                            <div class="panel-footer">
-                                                <span class="pull-left">Cancel</span>
-                                                <span class="pull-right"><i class="fa fa-minus-circle"></i></span>
-                                                <div class="clearfix"></div>
-                                            </div>
-                                        </a>
-                                        <a href="pur_vendor.html">
-                                            <div class="panel-footer">
-                                                <span class="pull-left">Request Parment</span>
-                                                <span class="pull-right"><i class="fa fa-credit-card"></i></span>
-                                                <div class="clearfix"></div>
-                                            </div>
-                                        </a>
-                                        <a href="pur_vendor.html">
-                                            <div class="panel-footer">
-                                                <span class="pull-left">Email</span>
-                                                <span class="pull-right"><i class="fa fa-envelope-o"></i></span>
-                                                <div class="clearfix"></div>
-                                            </div>
-                                        </a>
-                                        <a href="pur_vendor.html">
-                                            <div class="panel-footer">
-                                                <span class="pull-left">Print</span>
-                                                <span class="pull-right"><i class="fa fa-print"></i></span>
-                                                <div class="clearfix"></div>
-                                            </div>
-                                        </a>
-                                        <a href="pur_vendor.html" class="text-danger">
-                                            <div class="panel-footer">
-                                                <span class="pull-left">Delete</span>
-                                                <span class="pull-right"><i class="fa fa-close"></i></span>
-                                                <div class="clearfix"></div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-6">
-                                    <div class="panel panel-success">
-                                        <div class="panel-heading">
-                                            <div class="row">
-                                                <div class="col-xs-3">
-                                                    <i class="fa fa-file-text fa-2x"></i>
+                                                    <i class="fa fa-file-excel-o fa-2x"></i>
                                                     <div>Jan 17,2016</div>
                                                 </div>
                                                 <div class="col-xs-9 text-right">
-                                                    <div style="font-size:22px">CINV-042</div>
+                                                    <div style="font-size:22px">SORD-002</div>
                                                     <!-- <div>Support Tickets!</div> -->
-                                                    <div><i class="fa fa-group fa-1x"></i> Wiwat Trading co.ltd.</div>
+                                                    <div><i class="fa fa-building-o fa-1x"></i> Goodwill co.,ltd.</div>
                                                     <div><i class="fa fa-male fa-1x"></i> Methaphan R.</div>
                                                 </div>
                                             </div>
-                                            <div style="font-size:22px">THB 8150.00</div>
-                                            <span class="label label-success">Deposited</span>
+                                            <div style="font-size:22px">THB 21500.00</div>
+                                            <span class="label label-danger">Not Billed</span>
+                                            <span class="label label-danger">Not Received</span>
                                         </div>
                                         <a href="pur_vendor.html">
                                             <div class="panel-footer">
-                                                <span class="pull-left">Cancel</span>
-                                                <span class="pull-right"><i class="fa fa-minus-circle"></i></span>
-                                                <div class="clearfix"></div>
-                                            </div>
-                                        </a>
-                                        <a href="pur_vendor.html">
-                                            <div class="panel-footer">
                                                 <span class="pull-left">Email</span>
-                                                <span class="pull-right"><i class="fa fa-envelope-o"></i></span>
-                                                <div class="clearfix"></div>
-                                            </div>
-                                        </a>
-                                        <a href="pur_vendor.html">
-                                            <div class="panel-footer">
-                                                <span class="pull-left">Print</span>
-                                                <span class="pull-right"><i class="fa fa-print"></i></span>
-                                                <div class="clearfix"></div>
-                                            </div>
-                                        </a>
-                                        <a href="pur_vendor.html" class="text-danger">
-                                            <div class="panel-footer">
-                                                <span class="pull-left">Delete</span>
-                                                <span class="pull-right"><i class="fa fa-close"></i></span>
-                                                <div class="clearfix"></div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-6">
-                                    <div class="panel panel-success">
-                                        <div class="panel-heading">
-                                            <div class="row">
-                                                <div class="col-xs-3">
-                                                    <i class="fa fa-file-text fa-2x"></i>
-                                                    <div>Jan 18,2016</div>
-                                                </div>
-                                                <div class="col-xs-9 text-right">
-                                                    <div style="font-size:22px">CINV-043</div>
-                                                    <!-- <div>Support Tickets!</div> -->
-                                                    <div><i class="fa fa-group fa-1x"></i> Wiwat Trading co.ltd.</div>
-                                                    <div><i class="fa fa-male fa-1x"></i> Methaphan R.</div>
-                                                </div>
-                                            </div>
-                                            <div style="font-size:22px">THB 1460.00</div>
-                                            <span class="label label-success">Deposited</span>
-                                        </div>
-                                        <a href="pur_vendor.html">
-                                            <div class="panel-footer">
-                                                <span class="pull-left">Cancel</span>
-                                                <span class="pull-right"><i class="fa fa-minus-circle"></i></span>
-                                                <div class="clearfix"></div>
-                                            </div>
-                                        </a>
-                                        <a href="pur_vendor.html">
-                                            <div class="panel-footer">
-                                                <span class="pull-left">Email</span>
-                                                <span class="pull-right"><i class="fa fa-envelope-o"></i></span>
+                                                <span class="pull-right"><i class="fa fa-envelope"></i></span>
                                                 <div class="clearfix"></div>
                                             </div>
                                         </a>
