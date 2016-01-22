@@ -229,60 +229,92 @@
                         <h1 class="page-header">Add Vendor</h1>
                             
                         <!-- Content HERE !!! -->
-                            <div class="col-lg-6">
-                            <div class="btn-group btn-group-justified">
-                                <a href="pur_add_vendor.html" class="btn btn-default">Company</a>
-                                <a href="#" class="btn btn-primary">Individual</a>
+                            <div class="row">
+                                <div class="col-lg-3">
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="btn-group btn-group-justified">
+                                        <a href="pur_add_vendor.html" class="btn btn-default">Company</a>
+                                        <a href="#" class="btn btn-primary">Individual</a>
+                                    </div>
+                                </div>
                             </div>
 
                             <form class="form-horizontal" role="form">
                                 <br>
-                            <div class="form-group">
-                                <label class="control-label col-sm-2" for="firstName">First Name:</label>
-                                <div class="col-sm-6">
-                                    <input type="text" class="form-control" id="companyName" placeholder="Required Field">
+                                <div class="row">
+                                    <div class="col-lg-5">
+                                        <div class="form-group">
+                                            <label class="control-label col-sm-3" for="firstName">First Name:</label>
+                                            <div class="col-sm-6">
+                                                <input type="text" class="form-control" id="companyName" placeholder="Required Field">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-5">
+                                            <div class="form-group">
+                                                <label class="control-label col-sm-3" for="phone">Phone Number:</label>
+                                                <div class="col-sm-6">
+                                                    <input type="text" class="form-control" id="phone">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="control-label col-sm-2" for="middleName">Middle Name:</label>
-                                <div class="col-sm-6">
-                                    <input type="text" class="form-control" id="companyName">
+                                <div class="row">
+                                    <div class="col-lg-5">
+                                        <div class="form-group">
+                                            <label class="control-label col-sm-3" for="middleName">Middle Name:</label>
+                                            <div class="col-sm-6">
+                                                <input type="text" class="form-control" id="companyName">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5">
+                                        <div class="form-group">
+                                            <label class="control-label col-sm-3" for="email">Email:</label>
+                                            <div class="col-sm-6">
+                                                <input type="email" class="form-control" id="email">
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="control-label col-sm-2" for="lastName">Last Name:</label>
-                                <div class="col-sm-6">
-                                    <input type="text" class="form-control" id="companyName" placeholder="Required Field">
+                                <div class="row">
+                                    <div class="col-lg-5">
+                                        <div class="form-group">
+                                            <label class="control-label col-sm-3" for="lastName">Last Name:</label>
+                                            <div class="col-sm-6">
+                                                <input type="text" class="form-control" id="companyName" placeholder="Required Field">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5">
+                                        <div class="form-group">
+                                            <label class="control-label col-sm-3" for="website">Website:</label>
+                                            <div class="col-sm-6">
+                                                <input type="text" class="form-control" id="website">
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="control-label col-sm-2" for="address">Address:</label>
-                                <div class="col-sm-6">
-                                    <textarea type="text" rows="3" class="form-control" id="address">
-                                    </textarea>
+                                <div class="row">
+                                    <div class="col-lg-5">
+                                        <div class="form-group">
+                                            <label class="control-label col-sm-3" for="address">Address:</label>
+                                            <div class="col-sm-8">
+                                                <textarea type="text" rows="3" class="form-control" id="address">
+                                                </textarea>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="control-label col-sm-2" for="phone">Phone Number:</label>
-                                <div class="col-sm-6">
-                                    <input type="text" class="form-control" id="phone">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="control-label col-sm-2" for="email">Email:</label>
-                                <div class="col-sm-6">
-                                    <input type="email" class="form-control" id="email">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="control-label col-sm-2" for="website">Website:</label>
-                                <div class="col-sm-6">
-                                    <input type="text" class="form-control" id="website">
-                                </div>
-                            </div>
+                            
+                            
+                            
                             <hr>
                             <div class="row">
-                                <div class="col-lg-12">
+                                <div class="col-lg-10">
                                     <table class="table">
                                         <thead>
                                             <tr>
@@ -306,7 +338,9 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <button type="addContact" class="btn btn-block">Add Contact</button>
+                                <div class="col-lg-10">
+                                    <button type="addContact" class="btn btn-block">Add Contact</button>
+                                </div>
                             </div>
                             <hr>
                             <div class="form-group">
@@ -327,12 +361,15 @@
                                     <input type="text" class="form-control" id="vendorNumber">
                                 </div>
                             </div>
+                <!-- Wait for javascript -->
                             <div class="form-group">
                                 <label class="control-label col-sm-2" for="type">Type:</label>
                                 <div class="col-sm-6">
                                     <div class="btn-group">
                                         <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
-                                            Required Field (Click to select one item) <span class="caret"></span></button>
+                                            Required Field (Click to select one item) 
+                                            <span class="caret"></span>
+                                        </button>
                                         <ul class="dropdown-menu" role="menu">
                                             <li><a href="#">Expense Vendor</a></li>
                                             <li><a href="#">Fixed Asset Vendor</a></li>
@@ -348,7 +385,7 @@
 
                             <div class="form-group">
                                 <div class="col-sm-offset-2 col-sm-10">
-                                    <button type="submit" class="btn btn-success">Add Bill</button>
+                                    <button type="submit" class="btn btn-success">Add Vendor</button>
                                     <button type="submit" class="btn btn-danger">Reset</button>
                                 </div>
                             </div>
