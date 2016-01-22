@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>ERP simple SME - Add Bill</title>
+    <title>ERP simple SME - Add Purchase Order</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -144,6 +144,9 @@
                             <!-- /input-group -->
                         </li>
                         <li>
+                            <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                        </li>
+                        <li>
                             <a href="#"><i class="fa fa-credit-card fa-fw"></i> Accounting</a>
                         </li>
                         <li>
@@ -223,8 +226,161 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1 class="page-header">Blank</h1>
+                        <h1 class="page-header">Add Purchase Order</h1>
                         <!-- Content HERE !!! -->
+                            <form class="form-horizontal" role="form">
+                                <div class="row">
+                                    <div class="col-lg-5">
+                                        <div class="form-group">
+                                            <label class="control-label col-sm-2" for="vendor">Vendor:</label>
+                                            <div class="col-sm-6">
+                                                <input type="text" class="form-control" id="vendor" placeholder="Required Field">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5">
+                                        <div class="form-group">
+                                            <label class="control-label col-sm-2" for="refNo">Ref.Number:</label>
+                                            <div class="col-sm-6">
+                                                <input type="text" class="form-control" id="refNo">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-5">
+                                        <div class="form-group">
+                                        <label class="control-label col-sm-2" for="address">Address:</label>
+                                            <div class="col-sm-8">
+                                                <textarea rows="3" class="form-control" id="address">
+                                                </textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                    <!-- will be selectable from calendar soon -->
+                                    <div class="col-lg-5">
+                                        <div class="form-group">
+                                            <label class="control-label col-sm-2" for="date">Date:</label>
+                                            <div class="col-sm-6">
+                                                <input type="text" class="form-control" id="date" placeholder="Required Field">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5">
+                                        <div class="form-group">
+                                            <label class="control-label col-sm-2" for="paymentTerm">Payment Term:</label>
+                                            <div class="col-sm-6">
+                                                <input type="text" class="form-control" id="paymentTerm">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-5">
+                                        <div class="form-group">
+                                            <label class="control-label col-sm-2" for="recipient">Recipient:</label>
+                                            <div class="col-sm-6">
+                                                <input type="text" class="form-control" id="recipient">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-lg-10">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th></th>
+                                                    <th></th>
+                                                    <th>Description</th>
+                                                    <th>Qty</th>
+                                                    <th>Available</th>
+                                                    <th>Price</th>
+                                                    <th>Discount</th>
+                                                    <th>Total</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>001</td>
+                                                    <td>Salmon</td>
+                                                    <td>Fresh Norwegian Salmon</td>
+                                                    <td>2 kg</td>
+                                                    <td>5 kg</td>
+                                                    <td>THB 6000.00</td>
+                                                    <td>THB 600.00</td>
+                                                    <td>THB 5400.00</td>
+                                                </tr>
+                                            </tbody>
+                                            <tbody>
+                                                <tr>
+                                                    <td>002</td>
+                                                    <td>Tuna</td>
+                                                    <td>Japanese Tuna</td>
+                                                    <td>1 kg</td>
+                                                    <td>9.5 kg</td>
+                                                    <td>THB 4500.00</td>
+                                                    <td></td>
+                                                    <td>THB 4500.00</td>
+                                                </tr>
+                                            </tbody>
+                                            <tfoot>
+                                                <tr>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <th style="text-align:right">Total</th>
+                                                    <td>THB 10500.00</td>
+                                                    <td>THB 600.00</td>
+                                                    <td>THB 9900.00</td>
+                                                </tr>
+                                            </tfoot>
+                                        </table>
+                                        <button type="addContact" class="btn btn-success btn-block">Add Product</button>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-lg-5">
+                                        <div class="form-group">
+                                        <label class="control-label col-sm-2" for="note">Document Note:</label>
+                                            <div class="col-sm-8">
+                                                <textarea rows="5" class="form-control" id="note">
+                                                </textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5">
+                                        <div class="form-group">
+                                            <label class="control-label col-sm-2" for="subtotal">Subtotal:</label>
+                                            <div class="col-sm-6">
+                                                <input type="text" class="form-control" id="subtotal" value="THB 10500.00">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5">
+                                        <div class="form-group">
+                                            <label class="control-label col-sm-2" for="discount">Discount:</label>
+                                            <div class="col-sm-6">
+                                                <input type="text" class="form-control" id="discount" value="THB 600.00">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5"><hr></div>
+                                    <div class="col-lg-5">
+                                        <div class="form-group">
+                                            <label class="control-label col-sm-2" for="total">Total:</label>
+                                            <div class="col-sm-6">
+                                                <input type="text" class="form-control" id="total" value="THB 9900.00">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+
+                        <!-- End Content -->
                     </div>
                     <!-- /.col-lg-12 -->
                 </div>
