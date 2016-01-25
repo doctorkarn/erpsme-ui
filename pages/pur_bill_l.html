@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>ERP simple SME - Purchase Orders</title>
+    <title>ERP simple SME - Bills</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -224,106 +224,66 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <h1 class="page-header">
-                            <div class="col-lg-9">Purchase Orders</div>
-                            <div calss="col-lg-3">
+                            <div class="col-lg-10">Bills</div>
+                            <div calss="col-lg-2">
                                 <a href="pur_add_vendor.html">
                                     <div class="btn btn-default">
-                                        <i class="fa fa-plus"></i> Add Purchase Order
+                                        <i class="fa fa-plus"></i> Add Bill
                                     </div>
                                 </a>
                                 <div class="btn-group">
-                                    <a href="#" class="btn btn-primary"><i class="fa fa-square-o"></i></a>
-                                    <a href="pur_purchase_order_l.html" class="btn btn-default"><i class="fa fa-bars"></i></a>
+                                    <a href="pur_bill.html" class="btn btn-default"><i class="fa fa-square-o"></i></a>
+                                    <a href="#" class="btn btn-primary"><i class="fa fa-bars"></i></a>
                                 </div>
                             </div>
                         </h1>
                         <!-- Content HERE !!! -->
-                            <div class="row">
-                                <div class="col-lg-3 col-md-6">
-                                    <div class="panel panel-success">
-                                        <div class="panel-heading">
-                                            <div class="row">
-                                                <div class="col-xs-3">
-                                                    <i class="fa fa-file-excel-o fa-2x"></i>
-                                                    <div>Jan 16,2016</div>
-                                                </div>
-                                                <div class="col-xs-9 text-right">
-                                                    <div style="font-size:22px">SORD-001</div>
-                                                    <!-- <div>Support Tickets!</div> -->
-                                                    <div><i class="fa fa-building-o fa-1x"></i> Goodwill co.,ltd.</div>
-                                                    <div><i class="fa fa-male fa-1x"></i> Methaphan R.</div>
-                                                </div>
-                                            </div>
-                                            <div style="font-size:22px">THB 34800.00</div>
-                                            <span class="label label-success">Billed</span>
-                                            <span class="label label-success">Received</span>
-                                        </div>
-                                        <a href="pur_vendor.html">
-                                            <div class="panel-footer">
-                                                <span class="pull-left">Email</span>
-                                                <span class="pull-right"><i class="fa fa-envelope"></i></span>
-                                                <div class="clearfix"></div>
-                                            </div>
-                                        </a>
-                                        <a href="pur_vendor.html">
-                                            <div class="panel-footer">
-                                                <span class="pull-left">Print</span>
-                                                <span class="pull-right"><i class="fa fa-print"></i></span>
-                                                <div class="clearfix"></div>
-                                            </div>
-                                        </a>
-                                        <a href="pur_vendor.html" class="text-danger">
-                                            <div class="panel-footer">
-                                                <span class="pull-left">Delete</span>
-                                                <span class="pull-right"><i class="fa fa-close"></i></span>
-                                                <div class="clearfix"></div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-6">
-                                    <div class="panel panel-danger">
-                                        <div class="panel-heading">
-                                            <div class="row">
-                                                <div class="col-xs-3">
-                                                    <i class="fa fa-file-excel-o fa-2x"></i>
-                                                    <div>Jan 17,2016</div>
-                                                </div>
-                                                <div class="col-xs-9 text-right">
-                                                    <div style="font-size:22px">SORD-002</div>
-                                                    <!-- <div>Support Tickets!</div> -->
-                                                    <div><i class="fa fa-building-o fa-1x"></i> Goodwill co.,ltd.</div>
-                                                    <div><i class="fa fa-male fa-1x"></i> Methaphan R.</div>
-                                                </div>
-                                            </div>
-                                            <div style="font-size:22px">THB 21500.00</div>
-                                            <span class="label label-danger">Not Billed</span>
-                                            <span class="label label-danger">Not Received</span>
-                                        </div>
-                                        <a href="pur_vendor.html">
-                                            <div class="panel-footer">
-                                                <span class="pull-left">Email</span>
-                                                <span class="pull-right"><i class="fa fa-envelope"></i></span>
-                                                <div class="clearfix"></div>
-                                            </div>
-                                        </a>
-                                        <a href="pur_vendor.html">
-                                            <div class="panel-footer">
-                                                <span class="pull-left">Print</span>
-                                                <span class="pull-right"><i class="fa fa-print"></i></span>
-                                                <div class="clearfix"></div>
-                                            </div>
-                                        </a>
-                                        <a href="pur_vendor.html" class="text-danger">
-                                            <div class="panel-footer">
-                                                <span class="pull-left">Delete</span>
-                                                <span class="pull-right"><i class="fa fa-close"></i></span>
-                                                <div class="clearfix"></div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="row">
+                            <div class-"col-lg-12">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Bill Date</th>
+                                            <th>Bill</th>
+                                            <th>Vendor</th>
+                                            <th>Amount</th>
+                                            <th>Outstanding</th>
+                                            <th>Notes</th>
+                                            <th>Delivery Date</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Jan 16, 2016</td>
+                                            <td>VINV-001</td>
+                                            <td>Goodwill co.,ltd.</td>
+                                            <td>THB 34800.00</td>
+                                            <td>THB 0.00</td>
+                                            <td>0812345678</td>
+                                            <td>Jan 21,2016</td>
+                                            <td>
+                                                <span class="label label-success">Billed</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                    <tbody>
+                                        <tr>
+                                            <td>Jan 17, 2016</td>
+                                            <td>VINV-002</td>
+                                            <td>Goodwill co.,ltd.</td>
+                                            <td>THB 21500.00</td>
+                                            <td>THB 20000.00</td>
+                                            <td>0812345678</td>
+                                            <td>Feb 2, 2016</td>
+                                            <td>
+                                                <span class="label label-danger">Not Billed</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>                   
+                        </div>
                         <!-- End Content -->
                     </div>
                     <!-- /.col-lg-12 -->
