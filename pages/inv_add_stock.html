@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>ERP simple SME - Vendors</title>
+    <title>ERP simple SME - New product</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -144,38 +144,6 @@
                             <!-- /input-group -->
                         </li>
                         <li>
-                            <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
-                        </li>
-                        <!-- <li>
-                            <a href="tables.html"><i class="fa fa-table fa-fw"></i> Tables</a>
-                        </li>
-                        <li>
-                            <a href="forms.html"><i class="fa fa-edit fa-fw"></i> Forms</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-wrench fa-fw"></i> UI Elements<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a href="panels-wells.html">Panels and Wells</a>
-                                </li>
-                                <li>
-                                    <a href="buttons.html">Buttons</a>
-                                </li>
-                                <li>
-                                    <a href="notifications.html">Notifications</a>
-                                </li>
-                                <li>
-                                    <a href="typography.html">Typography</a>
-                                </li>
-                                <li>
-                                    <a href="icons.html"> Icons</a>
-                                </li>
-                                <li>
-                                    <a href="grid.html">Grid</a>
-                                </li>
-                            </ul>
-                        </li> -->
-                        <li>
                             <a href="#"><i class="fa fa-credit-card fa-fw"></i> Accounting</a>
                         </li>
                         <li>
@@ -255,83 +223,182 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1 class="page-header">Vendors
-                            <a href="pur_add_vendor.html">
-                                <div class="btn btn-default">
-                                    <i class="fa fa-plus"></i> Add Vendor
-                                </div>
-                            </a>
+                        <h1 class="page-header">Add Product to Stock                            
                         </h1>
                         <!-- Content HERE !!! -->
-                                
+                        <form class="form-horizontal" role="form">
                             <div class="row">
-                                <div class="col-lg-3 col-md-6">
-                                    <div class="panel panel-info">
-                                        <div class="panel-heading">
-                                            <div class="row">
-                                                <div class="col-xs-3">
-                                                    <i class="fa fa-building-o fa-2x"></i>
-                                                </div>
-                                                <div class="col-xs-9 text-right">
-                                                    <div style="font-size:22px">GoodWill co.,ltd.</div>
-                                                    <!-- <div>Support Tickets!</div> -->
-                                                    <div><i class="fa fa-map-marker fa-1x"></i> 204 Cross-Site Tower A Pinkao, Ladyao, Bangkok, 10500, Thailand</div>
-                                                    <div><i class="fa fa-phone fa-1x"></i> 0812345678</div>
-                                                    <div><i class="fa fa-envelope fa-1x"></i> sales@goodwill.com</div>
-                                                </div>
-                                            </div>
+                                <div class="col-lg-5">
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-3" for="vendor">Name:</label>
+                                        <div class="col-sm-8">
+                                            <input type="text" class="form-control" id="vendor" placeholder="Required Field">
                                         </div>
-                                        <a href="pur_vendor.html">
-                                            <div class="panel-footer">
-                                                <span class="pull-left">View</span>
-                                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                                <div class="clearfix"></div>
-                                            </div>
-                                        </a>
-                                        <a href="pur_vendor.html" class="text-danger">
-                                            <div class="panel-footer">
-                                                <span class="pull-left">Delete</span>
-                                                <span class="pull-right"><i class="fa fa-close"></i></span>
-                                                <div class="clearfix"></div>
-                                            </div>
-                                        </a>
                                     </div>
                                 </div>
-                                <div class="col-lg-3 col-md-6">
-                                    <div class="panel panel-info">
-                                        <div class="panel-heading">
-                                            <div class="row">
-                                                <div class="col-xs-3">
-                                                    <i class="fa fa-building-o fa-2x"></i>
-                                                </div>
-                                                <div class="col-xs-9 text-right">
-                                                    <div style="font-size:22px">Sunbite part.,ltd.</div>
-                                                    <!-- <div>Support Tickets!</div> -->
-                                                    <div><i class="fa fa-map-marker fa-1x"></i> 306 18 fl. ZP Tower, Silom Rd.
-                                                        Saladang, Sathon, Bangkok, 10200, Thailand</div>
-                                                    <div><i class="fa fa-phone fa-1x"></i> 0987654321</div>
-                                                    <div><i class="fa fa-envelope fa-1x"></i> sunbite.part@gmail.com</div>
+                                <div class="col-lg-5">
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-3" for="refNo">Unit:</label>
+                                        <div class="col-sm-6">
+                                            <input type="text" class="form-control" id="refNo">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-5">
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-3" for="refNo">Sales Price:</label>
+                                        <div class="col-sm-6">
+                                            <input type="text" class="form-control" id="refNo">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5">
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-3" for="date">Purchase Price:</label>
+                                        <div class="col-sm-6">
+                                            <input type="text" class="form-control" id="date">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-lg-5">
+                                    <div class="row">
+                                        <div class="form-group">
+                                            <label class="control-label col-sm-3" for="refNo">Item Number:</label>
+                                            <div class="col-sm-6">
+                                                <input type="text" class="form-control" id="refNo">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group">
+                                            <label class="control-label col-sm-3" for="refNo">Family:</label>
+                                            <div class="col-sm-6">
+                                                <input type="text" class="form-control" id="refNo">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5">
+                                    <div class="form-group">
+                                    <label class="control-label col-sm-3" for="note">Description:</label>
+                                        <div class="col-sm-8">
+                                            <textarea rows="3" class="form-control" id="note">
+                                            </textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-lg-5">
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-3" for="type">Track Inventory:</label>
+                                        <div class="col-sm-3">
+                                            <div class="btn-group btn-group-justified" data-toggle="buttons">
+                                                <label class="btn btn-default">
+                                                    <input type="radio" value="billed" checked="checked" /> Yes
+                                                </label> 
+                                                <label class="btn btn-default">
+                                                    <input type="radio" value="notBilled" /> No
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-lg-5">
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-3" for="type">Valuation costing:</label>
+                                        <div class="col-sm-8">
+                                            <div class="btn-group btn-group-justified" data-toggle="buttons">
+                                                <label class="btn btn-default">
+                                                    <input type="radio" value="billed" checked="checked" /> Standard cost
+                                                </label> 
+                                                <label class="btn btn-default">
+                                                    <input type="radio" value="notBilled" /> Weighted average price
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5">
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-4" for="type">Authorize negative stock:</label>
+                                        <div class="col-sm-3">
+                                            <div class="btn-group btn-group-justified" data-toggle="buttons">
+                                                <label class="btn btn-default">
+                                                    <input type="radio" value="billed" checked="checked" /> Yes
+                                                </label> 
+                                                <label class="btn btn-default">
+                                                    <input type="radio" value="notBilled" /> No
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="row">
+                                        <div class="col-lg-5">
+                                            <div class="form-group">
+                                            <label class="control-label col-sm-3" for="note">Minimum stock quantity:</label>
+                                                <div class="col-sm-6">
+                                                    <input type="text" class="form-control" id="refNo">
                                                 </div>
                                             </div>
                                         </div>
-                                        <a href="pur_vendor.html">
-                                            <div class="panel-footer">
-                                                <span class="pull-left">View</span>
-                                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                                <div class="clearfix"></div>
-                                            </div>
-                                        </a>
-                                        <a href="pur_vendor.html" class="text-danger">
-                                            <div class="panel-footer">
-                                                <span class="pull-left">Delete</span>
-                                                <span class="pull-right"><i class="fa fa-close"></i></span>
-                                                <div class="clearfix"></div>
-                                            </div>
-                                        </a>
                                     </div>
-                            </div>
-                                
-                            </div>
+                                    <div class="row">
+                                        <div class="col-lg-5">
+                                            <div class="form-group">
+                                            <label class="control-label col-sm-3" for="note">Receiving Location:</label>
+                                                <div class="col-sm-8">
+                                                    <input type="text" class="form-control" id="refNo">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-5">
+                                        <div class="form-group">
+                                        <label class="control-label col-sm-3" for="note">Delivery Location:</label>
+                                            <div class="col-sm-8">
+                                                <input type="text" class="form-control" id="refNo">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-5">
+                                            <div class="form-group">
+                                            <label class="control-label col-sm-3" for="note">Inventory Account:</label>
+                                                <div class="col-sm-8">
+                                                    <input type="text" class="form-control" id="refNo">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-5">
+                                        <div class="form-group">
+                                        <label class="control-label col-sm-3" for="note">Inventory Transit Account:</label>
+                                            <div class="col-sm-8">
+                                                <input type="text" class="form-control" id="refNo">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="form-group">
+                                    <div class="col-sm-offset-1 col-sm-2">
+                                        <button type="submit" class="btn btn-block btn-success">Add Product</button>
+                                    </div>
+                                    <button type="submit" class="btn btn-danger">Reset</button>
+                                </div>
+                            </form>
                         <!-- End Content -->
                     </div>
                     <!-- /.col-lg-12 -->
