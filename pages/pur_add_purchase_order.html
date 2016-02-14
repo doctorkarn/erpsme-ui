@@ -287,57 +287,59 @@
                                 </div>
                                 <hr>
                                 <div class="row">
-                                    <div class="col-lg-10">
-                                        <table class="table">
-                                            <thead>
-                                                <tr>
-                                                    <th></th>
-                                                    <th></th>
-                                                    <th>Description</th>
-                                                    <th>Qty</th>
-                                                    <th>Available</th>
-                                                    <th>Price</th>
-                                                    <th>Discount</th>
-                                                    <th>Total</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>001</td>
-                                                    <td>Salmon</td>
-                                                    <td>Fresh Norwegian Salmon</td>
-                                                    <td>2 kg</td>
-                                                    <td>5 kg</td>
-                                                    <td>THB 6000.00</td>
-                                                    <td>THB 600.00</td>
-                                                    <td>THB 5400.00</td>
-                                                </tr>
-                                            </tbody>
-                                            <tbody>
-                                                <tr>
-                                                    <td>002</td>
-                                                    <td>Tuna</td>
-                                                    <td>Japanese Tuna</td>
-                                                    <td>1 kg</td>
-                                                    <td>9.5 kg</td>
-                                                    <td>THB 4500.00</td>
-                                                    <td></td>
-                                                    <td>THB 4500.00</td>
-                                                </tr>
-                                            </tbody>
-                                            <tfoot>
-                                                <tr>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <th style="text-align:right">Total</th>
-                                                    <td>THB 10500.00</td>
-                                                    <td>THB 600.00</td>
-                                                    <td>THB 9900.00</td>
-                                                </tr>
-                                            </tfoot>
-                                        </table>
+                                    <div class="col-lg-12">
+                                        <div clas="table-responsive">
+                                            <table class="table table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th></th>
+                                                        <th></th>
+                                                        <th>Description</th>
+                                                        <th>Qty</th>
+                                                        <th>Available</th>
+                                                        <th>Price</th>
+                                                        <th>Discount</th>
+                                                        <th>Total</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>001</td>
+                                                        <td>Salmon</td>
+                                                        <td>Fresh Norwegian Salmon</td>
+                                                        <td>2 kg</td>
+                                                        <td>5 kg</td>
+                                                        <td>THB 6000.00</td>
+                                                        <td>THB 600.00</td>
+                                                        <td>THB 5400.00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>002</td>
+                                                        <td>Tuna</td>
+                                                        <td>Japanese Tuna</td>
+                                                        <td>1 kg</td>
+                                                        <td>9.5 kg</td>
+                                                        <td>THB 4500.00</td>
+                                                        <td></td>
+                                                        <td>THB 4500.00</td>
+                                                    </tr>
+                                                </tbody>
+                                                <tfoot>
+                                                    <tr>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <th style="text-align:right">Total</th>
+                                                        <td>THB 10500.00</td>
+                                                        <td>THB 600.00</td>
+                                                        <td>THB 9900.00</td>
+                                                    </tr>
+                                                </tfoot>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-offset-3 col-lg-6">
                                         <button type="addContact" class="btn btn-success btn-block">Add Product</button>
                                     </div>
                                 </div>
@@ -356,7 +358,7 @@
                                         <div class="form-group">
                                             <label class="control-label col-sm-3" for="subtotal">Subtotal:</label>
                                             <div class="col-sm-6">
-                                                <input type="text" class="form-control" id="subtotal" value="THB 10500.00">
+                                                <input type="text" class="form-control" id="subtotal" value="THB 10500.00" disabled>
                                             </div>
                                         </div>
                                     </div>
@@ -369,11 +371,11 @@
                                         </div>
                                     </div>
                                     <div class="col-lg-6"><hr></div>
-                                    <div class="col-lg-6">
+                                    <div class="col-lg-offset-6 col-lg-6">
                                         <div class="form-group">
                                             <label class="control-label col-sm-3" for="total">Total:</label>
                                             <div class="col-sm-6">
-                                                <input type="text" class="form-control" id="total" value="THB 9900.00">
+                                                <input type="text" class="form-control" id="total" value="THB 9900.00" disabled>
                                             </div>
                                         </div>
                                     </div>
