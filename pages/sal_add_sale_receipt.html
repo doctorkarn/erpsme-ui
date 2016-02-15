@@ -144,7 +144,7 @@
                             <!-- /input-group -->
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-credit-card fa-fw"></i> Accounting</a>
+                            <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                         </li>
                         <li>
                             <a href="#"><i class="fa fa-tags fa-fw"></i> Sales<span class="fa arrow"></span></a>
@@ -226,7 +226,290 @@
                         <h1 class="page-header">Add Sale Receipt                            
                         </h1>
                         <!-- Content HERE !!! -->
-                        
+                        <form class="form-horizontal" role="form">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-3" for="vendor">Customer:</label>
+                                        <div class="col-sm-6">
+                                            <input type="text" class="form-control" id="vendor" placeholder="Required Field">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-3" for="refNo">Ref.Number:</label>
+                                        <div class="col-sm-6">
+                                            <input type="text" class="form-control" id="refNo">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                    <label class="control-label col-sm-3" for="address">Address:</label>
+                                        <div class="col-sm-8">
+                                            <textarea rows="3" class="form-control" id="address">
+                                            </textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                <!-- will be selectable from calendar soon -->
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-3" for="date">Date:</label>
+                                        <div class="col-sm-6">
+                                            <input type="text" class="form-control" id="date">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-3" for="paymentTerm">Payment Term:</label>
+                                        <div class="col-sm-6">
+                                            <input type="text" class="form-control" id="paymentTerm">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-3" for="recipient">Recipient:</label>
+                                        <div class="col-sm-6">
+                                            <input type="text" class="form-control" id="recipient">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-lg-offset-4 col-md-offset-3 col-lg-4 col-md-6">
+                                    <div class="form-group">
+                                        <div class="btn-group btn-group-justified" data-toggle="buttons">
+                                            <label class="btn btn-default">
+                                                <input type="radio" value="company" checked="checked" /> Unpaid
+                                            </label> 
+                                            <label class="btn btn-default">
+                                                <input type="radio" value="customer" /> Settled
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="table-responsive">
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th></th>
+                                                    <th></th>
+                                                    <th>Description</th>
+                                                    <th>Qty</th>
+                                                    <th>Available</th>
+                                                    <th>Price</th>
+                                                    <th>Discount</th>
+                                                    <th>Total</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>001</td>
+                                                    <td>Salmon</td>
+                                                    <td>Fresh Norwegian Salmon</td>
+                                                    <td>2 kg</td>
+                                                    <td>5 kg</td>
+                                                    <td>THB 6000.00</td>
+                                                    <td>THB 600.00</td>
+                                                    <td>THB 5400.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>002</td>
+                                                    <td>Tuna</td>
+                                                    <td>Japanese Tuna</td>
+                                                    <td>1 kg</td>
+                                                    <td>9.5 kg</td>
+                                                    <td>THB 4500.00</td>
+                                                    <td></td>
+                                                    <td>THB 4500.00</td>
+                                                </tr>
+                                            </tbody>
+                                            <tfoot>
+                                                <tr>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <th style="text-align:right">Total</th>
+                                                    <td>THB 10500.00</td>
+                                                    <td>THB 600.00</td>
+                                                    <td>THB 9900.00</td>
+                                                </tr>
+                                            </tfoot>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="col-lg-offset-3 col-lg-6">
+                                    <button type="addContact" class="btn btn-success btn-block">Add Product</button>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                    <label class="control-label col-sm-3" for="note">Document Note:</label>
+                                        <div class="col-sm-8">
+                                            <textarea rows="5" class="form-control" id="note">
+                                            </textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-3" for="subtotal">Subtotal:</label>
+                                        <div class="col-sm-6">
+                                            <input type="text" class="form-control" id="subtotal" value="THB 10500.00" disabled>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-3" for="discount">Discount:</label>
+                                        <div class="col-sm-6">
+                                            <input type="text" class="form-control" id="discount" value="THB 600.00">
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-3" for="total">Total:</label>
+                                        <div class="col-sm-6">
+                                            <input type="text" class="form-control" id="total" value="THB 9900.00" disabled>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="row">
+                                            <div class="form-group">
+                                                <label class="control-label col-sm-3" for="deliveryDate">Delivery Date:</label>
+                                                <div class="col-sm-6">
+                                                    <input type="text" class="form-control" id="deliveryDate">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="form-group">
+                                                <label class="control-label col-sm-3" for="type">Type:</label>
+                                                <div class="col-sm-8">
+                                                    <div class="btn-group btn-group-justified" data-toggle="buttons">
+                                                        <label class="btn btn-default">
+                                                            <input type="radio" value="company" checked="checked" /> Company
+                                                        </label> 
+                                                        <label class="btn btn-default">
+                                                            <input type="radio" value="customer" /> Customer
+                                                        </label> 
+                                                        <label class="btn btn-default">
+                                                            <input type="radio" value="vendor" /> Vendor
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="row">
+                                            <div class="form-group">
+                                            <label class="control-label col-sm-3" for="address">Address:</label>
+                                                <div class="col-sm-8">
+                                                    <textarea rows="3" class="form-control" id="address">
+                                                    </textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="row">
+                                            <div class="form-group">
+                                                <label class="control-label col-sm-3" for="project">Project:</label>
+                                                <div class="col-sm-8">
+                                                    <input type="text" class="form-control" id="project">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="form-group">
+                                                <label class="control-label col-sm-3" for="type">Delivery Status:</label>
+                                                <div class="col-sm-9">
+                                                    <div class="btn-group btn-group-justified" data-toggle="buttons">
+                                                        <label class="btn btn-default">
+                                                            <input type="radio" value="billed" checked="checked" /> Received
+                                                        </label> 
+                                                        <label class="btn btn-default">
+                                                            <input type="radio" value="notBilled" /> Partially Received
+                                                        </label> 
+                                                        <label class="btn btn-default">
+                                                            <input type="radio" value="cancelled" /> Not Received
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="form-group">
+                                                <label class="control-label col-sm-3" for="type">Billing Status:</label>
+                                                <div class="col-sm-9">
+                                                    <div class="btn-group btn-group-justified" data-toggle="buttons">
+                                                        <label class="btn btn-default">
+                                                            <input type="radio" value="billed" checked="checked" /> Billed
+                                                        </label> 
+                                                        <label class="btn btn-default">
+                                                            <input type="radio" value="notBilled" /> Not Billed
+                                                        </label> 
+                                                        <label class="btn btn-default">
+                                                            <input type="radio" value="cancelled" /> Cancelled
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="row">
+                                            <div class="form-group">
+                                                <label class="control-label col-sm-3" for="assignTo">Assign to:</label>
+                                                <div class="col-sm-6">
+                                                    <input type="text" class="form-control" id="assignTo">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="form-group">
+                                            <label class="control-label col-sm-3" for="note">Private Note:</label>
+                                                <div class="col-sm-8">
+                                                    <textarea rows="5" class="form-control" id="note">
+                                                    </textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="form-group">
+                                    <div class="col-sm-offset-1 col-lg-3 col-sm-5 col-xs-6">
+                                        <button type="submit" class="btn btn-block btn-success">Add Bill</button>
+                                    </div>
+                                    <div class="col-sm-6 col-xs-3">
+                                    <button type="submit" class="btn btn-danger">Reset</button>
+                                </div>
+                            </form>
                         <!-- End Content -->
                     </div>
                     <!-- /.col-lg-12 -->

@@ -144,7 +144,7 @@
                             <!-- /input-group -->
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-credit-card fa-fw"></i> Accounting</a>
+                            <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                         </li>
                         <li>
                             <a href="#"><i class="fa fa-tags fa-fw"></i> Sales<span class="fa arrow"></span></a>
@@ -226,7 +226,143 @@
                         <h1 class="page-header">Add Customer                            
                         </h1>
                         <!-- Content HERE !!! -->
-                        
+                        <div class="row">
+                            <div class="col-lg-offset-4 col-lg-4">
+                                <div class="btn-group btn-group-justified">
+                                    <a href="#" class="btn btn-primary">Company</a>
+                                    <a href="sal_add_customer_i.html" class="btn btn-default">Individual</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <form class="form-horizontal" role="form">
+                            <br>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-3" for="companyName">Company Name:</label>
+                                        <div class="col-sm-8">
+                                            <input type="text" class="form-control" id="companyName" placeholder="Required Field">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-3" for="phone">Phone Number:</label>
+                                        <div class="col-sm-6">
+                                            <input type="text" class="form-control" id="phone">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-3" for="address">Address:</label>
+                                        <div class="col-sm-8">
+                                            <textarea type="text" rows="3" class="form-control" id="address">
+                                            </textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-3" for="email">Email:</label>
+                                        <div class="col-sm-6">
+                                            <input type="email" class="form-control" id="email">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-3" for="website">Website:</label>
+                                        <div class="col-sm-6">
+                                            <input type="text" class="form-control" id="website">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>First Name</th>
+                                                <th>Last Name</th>
+                                                <th>Email</th>
+                                                <th>Phone</th>
+                                                <th>Remark</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>John</td>
+                                                <td>Smith</td>
+                                                <td>johns@example.com</td>
+                                                <td>01-539-4462</td>
+                                                <td>Test Data</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-offset-3 col-lg-6">
+                                    <button type="addContact" class="btn btn-block">Add Contact</button>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-3" for="paymentTerm">Payment Terms:</label>
+                                        <div class="col-sm-6">
+                                            <input type="text" class="form-control" id="paymentTerm">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-3" for="taxpayerID">Taxpayer ID:</label>
+                                        <div class="col-sm-6">
+                                            <input type="text" class="form-control" id="taxpayerID">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-3" for="vendorNumber">Customer Number:</label>
+                                        <div class="col-sm-6">
+                                            <input type="text" class="form-control" id="vendorNumber">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-3" for="type">Type:</label>
+                                        <div class="col-sm-6">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+                                                    Required Field (Click to select one item) 
+                                                    <span class="caret"></span>
+                                                </button>
+                                                <ul class="dropdown-menu" role="menu">
+                                                    <li><a href="#">Expense Vendor</a></li>
+                                                    <li><a href="#">Fixed Asset Vendor</a></li>
+                                                    <li><a href="#">Purchase Vendor</a></li>
+                                                    <li><a href="#">Social Security Organization</a></li>
+                                                    <li><a href="#">Tax</a></li>
+                                                    <li><a href="#">Miscellaneous</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="form-group">
+                                <div class="col-sm-offset-1 col-lg-3 col-sm-5 col-xs-6">
+                                    <button type="submit" class="btn btn-block btn-success">Add Vendor</button>
+                                </div>
+                                <div class="col-sm-6 col-xs-3">
+                                <button type="submit" class="btn btn-danger">Reset</button>
+                            </div>
+                        </form>
                         <!-- End Content -->
                     </div>
                     <!-- /.col-lg-12 -->
